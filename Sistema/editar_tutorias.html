@@ -1282,7 +1282,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Ingreso</span> - Cuatrimestre</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Editar</span> - Tutorias</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1299,8 +1299,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Cuatrimestre</a>
-							<span class="breadcrumb-item active">Ingresar</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Tutorias</a>
+							<span class="breadcrumb-item active">Editar</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1341,10 +1341,12 @@
 				<div class="row">
 					<div class="col-12">
 
-						<!-- Basic layout-->
-						<div class="card">
+                        <!-- Basic layout-->
+                        
+						<div class="card" >
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Información del cuatrimestre</h5>
+                                <h5 class="card-title">Información de la tutoria</h5>
+                                
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1354,42 +1356,71 @@
 			                	</div>
 							</div>
 
-							<div class="card-body">
+							<div class="card-body" >
 								<form action="#">
 									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Clave:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" data-browse="Matricula" placeholder="Escribe la clave del cuatrimestre">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Año:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Escribe el año del cuatrimestre">
-										</div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-lg-3 col-form-label">Especialidad:</label>
-                                        <div class="col-lg-9">
-                                            <input type="text" class="form-control" placeholder="Escribe la Especialidad del cuatrimestre">
+                                            <label class="col-lg-3 col-form-label">ID:</label>
+                                            <div class="col-lg-9">
+                                                    <td style="width: 20%;"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_default">Insertar ID <i class=""></i></button></td>
+                                                </div>
                                         </div>
-                                    </div>
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Grupos:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Escribe el numero de grupos que existen">
-										</div>
-                                    
-                                   
-                                    </div>
-									<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Materias:</label>
+                                        <div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema a atender:</label>
 											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Escribe el numero de materias que cuenta el cuatrimestre">
+												<input type="text" class="form-control" data-browse="Matricula" placeholder="Wordpress">
 											</div>
-                                    </div>
-                                    
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="25/10/19">
+											</div>
+										</div>
+	
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Datos del alumno</label>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Agustin Zavala Arias">
+											</div>
+										</div>
+										<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Matricula:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="1930120">
+												</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Ingenieria en tecnologias de la Información">
+											</div>
+										</div>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Datos del profesor</label>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Mario Humberto Chavez">
+											</div>
+										</div>
+										<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Numero de empleado:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="4595">
+												</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Ingenieria en tecnologias de la Información">
+											</div>
+										</div>
+                                        
 
 									<!--<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Estado:</label>
@@ -1424,7 +1455,27 @@
 									</div>-->
 
 									
-									</div>
+                                    <!-- Basic modal -->
+                                    <div id="modal_default" class="modal fade" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Introduce el ID</h5>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                
+                                                    <div class="modal-body">
+                                                            <input type="text" class="form-control" placeholder="000001">
+                                                    </div>
+                
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn bg-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     <!-- /basic modal -->
 
 									<!--<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Tu perfil:</label>
@@ -1467,10 +1518,10 @@
 										<div class="col-lg-9">
 											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
 										</div>
-									</div>
+									</div>s
 								-->
 									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Enviar formulario <i class="icon-paperplane ml-2"></i></button>
+										<button type="submit" class="btn btn-primary">Editar Tutoria <i class="icon-paperplane ml-2"></i></button>
 									</div>
 								</form>
 							</div>
